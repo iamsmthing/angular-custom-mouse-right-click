@@ -1,0 +1,6 @@
+<div (contextmenu)="onRightClick($event)">Right-click me</div>
+    <app-context-menu
+      *ngIf="showContextMenu"
+      (edit)="onEdit()"
+      (delete)="onDelete()"
+    ></app-context-menu>
